@@ -1,0 +1,16 @@
+StressFree Drupal 7 theme
+=========================
+
+This is the Drupal 7 theme for the StressFree website (http://www.stress-free.co.nz).
+
+Recommended modules
+-------------------
+
+- google_analytics
+- pathauto
+- site_verify
+- token
+- field_group
+- ctools
+- wysiwyg
+- xmlsitemap

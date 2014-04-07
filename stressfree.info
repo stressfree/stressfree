@@ -1,0 +1,27 @@
+name = stressfree
+description = StressFree theme for Drupal 7
+screenshot = screenshot.jpg
+core = "7.x"
+engine = phptemplate
+
+regions[page_top] = Page top
+regions[header] = Header
+regions[highlight] = Highlight
+regions[help] = Help
+regions[content] = Content
+regions[footer_top] = Footer top
+regions[footer_bottom] = Footer bottom
+regions[page_bottom] = Page bottom
+
+features[] = logo
+features[] = name
+features[] = slogan
+features[] = search
+features[] = favicon
+features[] = main_menu
+features[] = secondary_menu
+
+stylesheets[][] = css/styles.css
+
+settings[wireframe_mode] = 0
+settings[clear_registry] = 0

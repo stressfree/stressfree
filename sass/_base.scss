@@ -1,0 +1,253 @@
+body {
+    color: $textdark;
+    font-weight: 400;
+    font-family: $standardfont;
+    line-height: 1.5;
+}
+
+a {
+    color: $textlink;
+    text-decoration: none;
+    
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.site-name-slogan, .main-menu, .secondary-menu, .header-region {
+    padding: $gutter/2 0;
+    text-align: center;
+}
+
+.site-name-slogan {
+    background: $header1;    
+}
+
+.site-name {
+    
+    img, h2 {
+        display: none;
+    }
+    
+    a.logo {
+        display: block;
+        margin: 0 auto;
+        width: $cols3;
+        height: 4em;
+        background: url('../images/stressfree.svg') 50% 50% no-repeat;
+        background-size: $cols3 auto;
+        
+        html.ie & {
+            width: 175px;
+            height: 40px;
+            background: url('../images/stressfree.png') 0 100% no-repeat;
+            background-size: 570px 80px;
+        }
+    }
+}
+
+.site-slogan {
+    padding-bottom: $gutter/2;
+    color: $textmedium;
+    font-size: 0.8em;
+    line-height: 1.2;
+    
+    div.region {
+        margin: 0 $gutter/2;
+    }
+}
+
+.main-menu, .secondary-menu, .header-region {
+    background: $header2;
+}
+
+.main-menu, .secondary-menu {
+    font-weight: 400;
+    font-family: $headingfont;
+    
+    h2 {
+        display: none;
+    }
+    
+    li {
+        @include inline-block;
+        padding: 0 0.6em;
+        list-style: none;
+        
+        a {
+            color: $textlight;
+        }
+    }
+}
+
+.secondary-menu {
+    padding-top: 0;
+    
+    li {
+        a {
+            display: block;
+            overflow: hidden;
+            width: 2.57em;
+            height: 2.57em;
+            background: url('../images/icons.svg') 0 0 no-repeat;
+            background-size: 10em 2.57em;
+            
+            text-indent: -1000px;
+        }
+        
+        &.menu-41 {
+            a {
+                background-position: -5em 0;
+            }
+        }
+        
+        &.menu-43 {
+            a {
+                background-position: -2.5em 0;
+            }
+        }
+        
+        &.menu-60 {
+            a {
+                background-position: -7.5em 0;
+            }
+        }
+    }
+}
+
+.header-region {
+    clear: both;
+    width: 100%;
+    
+    div.region {
+        margin: 0 $gutter/2;
+    }
+    
+    input.text {
+        padding: 0.4em 0 0.4em 0.6em;
+        width: 96%;
+        height: 1.4em;
+        border: 1px solid $textlight;
+        font-size: 1em;
+        font-family: $headingfont;
+        line-height: 1;          
+    }
+    
+    input.submit {
+        position: absolute;
+        margin-left: -6em;
+        padding: 0.4em 0.5em;
+        width: 6em;
+        height: 2.3em;
+        border: 1px solid $textlight;
+        background: $header1;
+        color: $textlight;
+        font-weight: 400;
+        font-size: 1em;
+        font-family: $headingfont;
+        line-height: 1;
+    }
+}
+
+.main-content {
+    margin: 0 $gutter/2;
+    padding: $gutter 0;
+    
+    h1, h2, h3, h4, h5, h6 {
+        margin: 1.2em 0 0.4em 0;
+        font-weight: 200;
+        font-family: $headingfont;
+        line-height: 1.2;
+        
+        a {
+            color: $textdark;
+        }
+    }
+    
+    h1 {
+        letter-spacing: -1px;
+        font-size: 2.1em;
+    }
+    
+    h2 {
+        letter-spacing: -1px;
+        font-size: 1.8em;
+    }
+    
+    h3 {
+        font-size: 1.6em;
+    }
+    
+    h4 {
+        font-size: 1.4em;
+    }
+    
+    h5 {
+        font-weight: 400;
+        font-size: 1.2em;
+    }
+    
+    h6 {
+        font-size: 1.2em;
+    }
+    
+    p {
+        margin: 0 0 0.7em 0;
+    }
+    
+    div {
+        &.submitted {
+            position: relative;
+            top: -0.5em;
+            margin: 0 0 0.4em 0;
+            color: $textsecondary;
+            font-weight: 400;
+            font-size: 0.9em;
+            font-family: $headingfont;
+        }
+        
+        &.node-teaser {
+            margin: 0 0 1.8em 0;
+        }
+        
+        &.image, &.centeredimage {
+            text-align: center;
+            font-size: 0.9em;
+                 
+            img {
+                margin: 0 0 0.2em 0;
+                max-width: 100%;
+                height: auto;
+            }
+            
+            a {
+                color: $textdark;
+            }
+        }
+        
+        &.image {
+            float: left;
+            margin: 0 $gutter/2 $gutter/2 0;
+            max-width: $cols2;
+        }
+        
+        &.centeredimage {
+            margin: $gutter/2 0;
+            width: 100%;
+        }     
+    }
+    
+    ul {
+        margin: 0 0 0.7em 1.3em;
+        font-family: $headingfont;
+    
+        &.links {
+            margin: 0.3em 0;
+        
+            li {
+                display: inline;
+                margin: 0 1em 0 0;
+            }
+        }
+    }
+}
