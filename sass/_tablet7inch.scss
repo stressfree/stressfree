@@ -1,4 +1,47 @@
-.main-content {
-    width: $cols9;
+.site-wrapper, .navigation-wrapper, .main-wrapper, .footer-wrapper {
+    width: $cols10;
     margin: 0 auto;
+}
+
+.main-menu {
+    padding-bottom: $gutterem/1.5;
+
+    li {
+        padding: 0 0.8em;
+        
+        &.first {
+            @include inline-block;
+        }
+    }
+}
+
+.secondary-menu {
+    text-align: left;
+    width: $cols4;
+    position: absolute;
+    
+    li {   
+        &.first {
+            display: none;
+        } 
+    }
+}
+
+.header-region {
+    padding: 0.15em 0 $gutterem/1.5 0;
+    
+    div.region {
+        margin: 0 0 0 $cols4;
+        text-align: right;
+    }
+    
+    input {
+        &.text {
+            width: $cols4;
+        }
+        &.submit {
+            margin-left: 0;
+            position: static;
+        }
+    }
 }

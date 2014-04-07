@@ -14,13 +14,17 @@ a {
     }
 }
 
-.site-name-slogan, .main-menu, .secondary-menu, .header-region {
-    padding: $gutter/2 0;
+.site, .main-menu, .secondary-menu, .header-region {
+    padding: $gutterem/2 0;
     text-align: center;
 }
 
-.site-name-slogan {
+.site {
     background: $header1;    
+}
+
+.navigation {
+    background: $header2;
 }
 
 .site-name {
@@ -47,35 +51,36 @@ a {
 }
 
 .site-slogan {
-    padding-bottom: $gutter/2;
+    padding-bottom: $gutterem/2;
     color: $textmedium;
     font-size: 0.8em;
     line-height: 1.2;
     
     div.region {
-        margin: 0 $gutter/2;
+        margin: 0 $gutterem/2;
     }
-}
-
-.main-menu, .secondary-menu, .header-region {
-    background: $header2;
 }
 
 .main-menu, .secondary-menu {
     font-weight: 400;
     font-family: $headingfont;
     
-    h2 {
-        display: none;
-    }
-    
     li {
         @include inline-block;
         padding: 0 0.6em;
+        line-height: 1;
         list-style: none;
         
         a {
             color: $textlight;
+        }
+    }
+}
+
+.main-menu {
+    li {
+        &.first {
+            display: none;
         }
     }
 }
@@ -90,7 +95,7 @@ a {
             width: 2.57em;
             height: 2.57em;
             background: url('../images/icons.svg') 0 0 no-repeat;
-            background-size: 10em 2.57em;
+            background-size: 10em auto;
             
             text-indent: -1000px;
         }
@@ -120,7 +125,7 @@ a {
     width: 100%;
     
     div.region {
-        margin: 0 $gutter/2;
+        margin: 0 $gutterem/2;
     }
     
     input.text {
@@ -149,9 +154,9 @@ a {
     }
 }
 
-.main-content {
-    margin: 0 $gutter/2;
-    padding: $gutter 0;
+.main {
+    margin: 0 $gutterem/2;
+    padding: $gutterem 0;
     
     h1, h2, h3, h4, h5, h6 {
         margin: 1.2em 0 0.4em 0;
@@ -227,12 +232,12 @@ a {
         
         &.image {
             float: left;
-            margin: 0 $gutter/2 $gutter/2 0;
+            margin: 0 $gutterem/2 $gutterem/2 0;
             max-width: $cols2;
         }
         
         &.centeredimage {
-            margin: $gutter/2 0;
+            margin: $gutterem/2 0;
             width: 100%;
         }     
     }

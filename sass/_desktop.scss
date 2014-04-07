@@ -1,0 +1,86 @@
+.site-wrapper, .navigation-wrapper, .footer-wrapper {
+    width: $cols13;
+    margin: 0 auto;
+}
+
+.site-wrapper {
+    height: 7em;
+}
+
+.site-name {
+    width: $cols5;
+    margin: 0;
+    float: left;
+    
+    a.logo {
+        width: $cols5;
+        height: 7em;
+        background: url('../images/stressfree.svg') 50% 50% no-repeat;
+        background-size: $cols5 auto;
+        
+        html.ie & {
+            width: 175px;
+            height: 40px;
+            background: url('../images/stressfree.png') 0 100% no-repeat;
+            background-size: 570px 80px;
+        }
+    }
+}
+
+.site-slogan {
+    float: right;
+    font-size: 1em;
+    padding-top: 1.2em;
+}
+
+.navigation {
+    padding: $gutterem/2 0;
+}
+
+.main-menu, .secondary-menu {
+    text-align: left;
+    display: inline;
+    
+    li {
+        float: left;
+        padding: 0 1.7em 0 0;
+        line-height: 1.5;
+    }
+}
+
+.secondary-menu {
+    li {        
+        a {
+            display: block;
+            width: auto;
+            height: auto;
+            text-indent: 0;
+            background: none;
+        }
+    }
+}
+
+.header-region {
+    padding: 0;
+
+    div {    
+        &.region {
+            position: absolute;
+            top: 4.2em;
+            float: right;
+            width: $cols7;
+            margin-left: $cols6 + $gutterem;
+        }
+        
+        &.block {
+            float: right;
+        }
+        
+    }
+    
+    input {
+        &.submit {
+            background: $header2;
+        }
+    }
+}
