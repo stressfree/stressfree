@@ -23,5 +23,8 @@ features[] = secondary_menu
 
 stylesheets[][] = css/styles.css
 
+scripts[] = js/script.js
+
+
 settings[wireframe_mode] = 0
 settings[clear_registry] = 0

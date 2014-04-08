@@ -1,3 +1,4 @@
+@import "compass/css3/border-radius";
 @import "compass/css3/inline-block";
 
 @font-face {
@@ -58,9 +59,12 @@ $textlight: #fff;
 $textsecondary: #666;
 $textlink: #007da8;
 $highlight: #fcfedb;
+$codefont: #f1f7ff;
+$codebackground: #333;
 
 $standardfont: "Verb Condensed", Helvetica, Arial, sans-serif;
 $headingfont: "Nexa", Helvetica, Arial, sans-serif;
+$fixedwidthfont: "Foundation Mono", "Lucida Console", Monaco, monospace;
 
 @import "frameless";
 

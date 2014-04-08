@@ -1,6 +1,6 @@
 .site-wrapper, .navigation-wrapper, .footer-wrapper {
-    width: $cols13;
     margin: 0 auto;
+    width: $cols13;
 }
 
 .site-wrapper {
@@ -8,9 +8,9 @@
 }
 
 .site-name {
-    width: $cols5;
-    margin: 0;
     float: left;
+    margin: 0;
+    width: $cols5;
     
     a.logo {
         width: $cols5;
@@ -29,8 +29,8 @@
 
 .site-slogan {
     float: right;
-    font-size: 1em;
     padding-top: 1.2em;
+    font-size: 1em;
 }
 
 .navigation {
@@ -38,8 +38,8 @@
 }
 
 .main-menu, .secondary-menu {
-    text-align: left;
     display: inline;
+    text-align: left;
     
     li {
         float: left;
@@ -54,8 +54,8 @@
             display: block;
             width: auto;
             height: auto;
-            text-indent: 0;
             background: none;
+            text-indent: 0;
         }
     }
 }
@@ -68,8 +68,8 @@
             position: absolute;
             top: 4.2em;
             float: right;
-            width: $cols7;
             margin-left: $cols6 + $gutterem;
+            width: $cols7;
         }
         
         &.block {

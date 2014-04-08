@@ -1,6 +1,6 @@
 .site-wrapper, .navigation-wrapper, .main-wrapper, .footer-wrapper {
-    width: $cols10;
     margin: 0 auto;
+    width: $cols10;
 }
 
 .main-menu {
@@ -16,9 +16,9 @@
 }
 
 .secondary-menu {
-    text-align: left;
-    width: $cols4;
     position: absolute;
+    width: $cols4;
+    text-align: left;
     
     li {   
         &.first {
@@ -40,8 +40,8 @@
             width: $cols4;
         }
         &.submit {
-            margin-left: 0;
             position: static;
+            margin-left: 0;
         }
     }
 }
