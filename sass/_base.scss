@@ -173,33 +173,37 @@ a {
     
     h1 {
         letter-spacing: -1px;
-        font-size: 2.1em;
+        font-size: 1.8em;
     }
     
     h2 {
         letter-spacing: -1px;
-        font-size: 1.8em;
+        font-size: 1.5em;
     }
     
     h3 {
-        font-size: 1.6em;
+        font-size: 1.3em;
     }
     
     h4 {
-        font-size: 1.4em;
+        font-size: 1.2em;
     }
     
     h5 {
         font-weight: 400;
-        font-size: 1.2em;
+        font-size: 1em;
     }
     
     h6 {
-        font-size: 1.2em;
+        font-size: 1em;
     }
     
     p {
-        margin: 0 0 0.7em 0;
+        margin: 0 0 0.9em 0;
+    }
+    
+    table {
+        margin: 0.8em 0 1.3em 0;
     }
     
     code, p.codesnippet, pre {
@@ -227,7 +231,8 @@ a {
         }
         
         &.node-teaser {
-            margin: 0 0 1.8em 0;
+            clear: both;
+            margin: 0 0 2.5em 0;
         }
         
         &.image, &.centeredimage {
@@ -261,17 +266,23 @@ a {
         }     
     }
     
-    ul {
-        margin: 0 0 0.7em 1.3em;
-        font-family: $headingfont;
+    ul, ol {
+        margin: 0 0 0.9em 1.3em;
+    }
     
-        &.links {
+    ul {
+        &.links, &.field-taxonomy-vocabulary-1, &.field-taxonomy-vocabulary-2 {
             margin: 0.3em 0;
+            font-family: $headingfont;
         
             li {
                 display: inline;
                 margin: 0 1em 0 0;
             }
+        }
+        
+        &.field-taxonomy-vocabulary-1, &.field-taxonomy-vocabulary-1 {
+            font-size: 0.8em;
         }
     }
 }
