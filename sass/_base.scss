@@ -206,6 +206,10 @@ a {
         margin: 0.8em 0 1.3em 0;
     }
     
+    object {
+        margin: 0.8em 0 1.3em 0!important;
+    }
+    
     code, p.codesnippet, pre {
         overflow: auto;
         -ms-overflow-y: hidden;
@@ -233,6 +237,24 @@ a {
         &.node-teaser {
             clear: both;
             margin: 0 0 2.5em 0;
+            
+            div.content {
+                h1 {
+                    font-size: 1.4em;
+                }
+                
+                h2 {
+                    font-size: 1.4em;
+                }
+                
+                h3 {
+                    font-size: 1.2em;
+                }
+                
+                h4 {
+                    font-size: 1em;
+                }
+            }
         }
         
         &.image, &.centeredimage {
