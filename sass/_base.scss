@@ -212,7 +212,9 @@ a {
     }
     
     object {
-        margin: 0.8em 0 1.3em 0!important;
+        display: block;
+        margin: 0.8em auto 1.3em auto!important;
+        border: 1px solid $textdark;
     }
     
     code, p.codesnippet, pre {
@@ -293,7 +295,7 @@ a {
             img {
                 margin: 0 0 1.2em 0;
             }
-        }     
+        } 
     }
     
     ul, ol {
@@ -331,6 +333,30 @@ a {
         
         &.field-taxonomy-vocabulary-1, &.field-taxonomy-vocabulary-1 {
             font-size: 0.8em;
+        }
+        
+        &.pager {
+            margin: 1em 0;
+            height: 2.5em;
+            border-top: 1px solid $textmedium;
+            border-bottom: 1px solid $textmedium;
+            font-size: 1.1em;
+            font-family: $headingfont;
+            
+            li {
+                padding: 0.5em 0 0 0;
+                list-style: none;
+                
+                &.pager-previous {
+                    float: left;
+                    margin: 0 0 0 0.5em;
+                }
+                
+                &.pager-next {
+                    float: right;
+                    margin: 0 0.5em 0 0;
+                }
+            }
         }
     }
 }
