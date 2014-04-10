@@ -28,31 +28,36 @@ a {
 }
 
 .site-name {
+    color: $textlight;
     
     img, h2 {
         display: none;
     }
     
-    a.logo {
-        display: block;
-        margin: 0 auto;
-        width: $cols3;
-        height: 4em;
-        background: url('../images/stressfree.svg') 50% 50% no-repeat;
-        background-size: $cols3 auto;
-        
-        html.ie & {
-            width: 175px;
-            height: 40px;
-            background: url('../images/stressfree.png') 0 100% no-repeat;
-            background-size: 570px 80px;
+    a {
+        color: $textlight;
+    
+        &.logo {
+            display: block;
+            margin: 0 auto;
+            width: $cols3;
+            height: 4em;
+            background: url('../images/stressfree.svg') 50% 50% no-repeat;
+            background-size: $cols3 auto;
+            
+            html.ie & {
+                width: 175px;
+                height: 40px;
+                background: url('../images/stressfree.png') 0 100% no-repeat;
+                background-size: 570px 80px;
+            }
         }
     }
 }
 
 .site-slogan {
     padding-bottom: $gutterem/2;
-    color: $textmedium;
+    color: $textlight;
     font-size: 0.8em;
     line-height: 1.2;
     
@@ -72,7 +77,7 @@ a {
         line-height: 1;
         
         a {
-            color: $textlight;
+            color: $textlightest;
         }
     }
 }
@@ -128,27 +133,32 @@ a {
         margin: 0 $gutterem/2;
     }
     
+    label {
+        display: none;
+    }
+    
     input.text {
-        @include border-radius(0px);
+        @include border-radius(7px);
         padding: 0.4em 0 0.4em 0.6em;
         width: 96%;
         height: 1.4em;
-        border: 1px solid $textlight;
+        border: 1px solid $textlightest;
         font-size: 1em;
         font-family: $headingfont;
         line-height: 1;   
     }
     
     input.submit {
-        @include border-radius(0px);
+        @include border-right-radius(7px);
+        @include border-left-radius(0px);
         position: absolute;
         margin-left: -6em;
         padding: 0.4em 0.5em;
         width: 6em;
         height: 2.3em;
-        border: 1px solid $textlight;
+        border: 1px solid $textlightest;
         background: $header1;
-        color: $textlight;
+        color: $textlightest;
         font-weight: 400;
         font-size: 1em;
         font-family: $headingfont;
@@ -208,6 +218,11 @@ a {
     p {
         margin: 0 0 0.9em 0;
     }
+                 
+    img {
+        max-width: 100%;
+        height: auto;
+    }
     
     table {
         margin: 0.8em 0 1.3em 0;
@@ -251,7 +266,6 @@ a {
         
         &.node-teaser {
             clear: both;
-            margin: 0 0 2.5em 0;
             
             div.content {
                 h1 {
@@ -282,11 +296,6 @@ a {
             text-align: center;
             font-weight: 700;
             font-size: 0.9em;
-                 
-            img {
-                max-width: 100%;
-                height: auto;
-            }
             
             a {
                 color: $textdark;
@@ -314,6 +323,32 @@ a {
             
             img {
                 margin: 0 0 0.9em 0;
+            }
+        }
+        
+        &.book-navigation {
+            clear: both;
+            padding: 1em 0 1.5em 0;
+            font-family: $headingfont;
+            
+            div.page-links {
+                a {
+                    display: block;
+                    text-align: center;
+                }
+            }
+            
+            ul {
+                margin: 0.2em 0 0.9em 0;
+                padding: 0.5em 0;
+                border-top: 1px solid $textmedium;
+                border-bottom: 1px solid $textmedium;
+                
+                li {
+                    margin: 0.5em 0 0.5em 2em;
+                    padding: 0 0 0 0.3em;
+                    list-style: decimal;
+                }
             }
         }
         

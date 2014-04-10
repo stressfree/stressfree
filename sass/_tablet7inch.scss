@@ -36,7 +36,10 @@
     }
     
     input {
+        vertical-align: top;
+        
         &.text {
+            @include border-right-radius(0px);
             width: $cols4;
         }
         &.submit {
@@ -74,10 +77,20 @@
     }
     
     div {
-        .imagelist {
+        &.imagelist {
             float: left;
             margin: 1em 1em 1.7em 1em;
             width: 45%;   
+        }       
+        
+        &.book-navigation {
+            div.page-links {
+                a {
+                    display: inline;
+                    padding: 0 2.5em 0 0;
+                    text-align: left;
+                }
+            }
         }
     }
     
