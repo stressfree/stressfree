@@ -70,7 +70,7 @@
 
 		   <?php if ($page['highlight']): ?><div class="highlight"><?php print render($page['highlight']); ?></div><?php endif; ?>
 
-            <?php if (!$node): ?>
+            <?php if (!isset($node)): ?>
             <?php print render($title_prefix); ?>
             <?php if ($title): ?>
                <h1 class="title"><?php print $title; ?></h1>
