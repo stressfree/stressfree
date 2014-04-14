@@ -52,11 +52,11 @@
         <div class="header-region">
           <?php print render($page['header']); ?>
         </div>
+        <?php endif; ?>
       </div>
     </div>
-    <?php endif; ?>  
+    <?php endif; ?>
   </div>
-  <?php endif; ?>
 
   <div class="main">
     <div class="main-wrapper">
