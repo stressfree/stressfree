@@ -16,13 +16,6 @@
         height: 7em;
         background: url('../images/stressfree.svg') 50% 50% no-repeat;
         background-size: $cols5 auto;
-        
-        html.ie & {
-            width: 175px;
-            height: 40px;
-            background: url('../images/stressfree.png') 0 100% no-repeat;
-            background-size: 570px 80px;
-        }
     }
 }
 
@@ -40,10 +33,18 @@
     display: inline;
     text-align: left;
     
+    ul {
+        display: inline;
+    }
+    
     li {
         float: left;
         padding: 0 1.7em 0 0;
         line-height: 1.5;
+        
+        a {
+            float: left;
+        }
     }
 }
 
@@ -81,5 +82,12 @@
         &.submit {
             background: $header2;
         }
+    }
+}
+
+.main { 
+    img {
+        width: auto;
+        height: auto;
     }
 }

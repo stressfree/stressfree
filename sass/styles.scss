@@ -83,4 +83,5 @@ $fixedwidthfont: "Foundation Mono", "Lucida Console", Monaco, monospace;
 html.ie {
     @import "tablet7inch";
     @import "desktop";
+    @import "ie";
 }

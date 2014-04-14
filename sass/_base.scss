@@ -44,13 +44,6 @@ a {
             height: 4em;
             background: url('../images/stressfree.svg') 50% 50% no-repeat;
             background-size: $cols3 auto;
-            
-            html.ie & {
-                width: 175px;
-                height: 40px;
-                background: url('../images/stressfree.png') 0 100% no-repeat;
-                background-size: 570px 80px;
-            }
         }
     }
 }
