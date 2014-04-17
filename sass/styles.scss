@@ -85,3 +85,7 @@ html.ie {
     @import "desktop";
     @import "ie";
 }
+
+@media print {
+    @import "print";
+}
